@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma Order</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Order Your Shawarma</h2>
+        <label for="shawarmaType">Choose Shawarma:</label>
+        <select id="shawarmaType">
+            <option value="Chicken Shawarma">Chicken Shawarma</option>
+            <option value="Beef Shawarma">Beef Shawarma</option>
+            <option value="Mixed Shawarma">Mixed Shawarma</option>
+            <option value="Lamb Shawarma">Lamb Shawarma</option>
+            <option value="Falafel Shawarma">Falafel Shawarma</option>
+            <option value="Turkey Shawarma">Turkey Shawarma</option>
+            <option value="Fish Shawarma">Fish Shawarma</option>
+            <option value="Vegetarian Shawarma">Vegetarian Shawarma</option>
+            <option value="BBQ Shawarma">BBQ Shawarma</option>
+        </select>
+        <br><br>
+        <label>Add Toppings:</label>
+        <div class="toppings-container">
+            <div class="topping"><input type="checkbox" id="cheese" value="Cheese"> Cheese</div>
+            <div class="topping"><input type="checkbox" id="extraMeat" value="Extra Meat"> Extra Meat</div>
+            <div class="topping"><input type="checkbox" id="spicySauce" value="Spicy Sauce"> Spicy Sauce</div>
+            <div class="topping"><input type="checkbox" id="garlicSauce" value="Garlic Sauce"> Garlic Sauce</div>
+            <div class="topping"><input type="checkbox" id="pickles" value="Pickles"> Pickles</div>
+            <div class="topping"><input type="checkbox" id="hummus" value="Hummus"> Hummus</div>
+        </div>
+        <button onclick="placeOrder()">Place Order</button>
+        <p id="orderSummary"></p>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
